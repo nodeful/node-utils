@@ -1,0 +1,35 @@
+{
+  "name": "@nodeful/utils",
+  "version": "1.0.0",
+  "description": "Node Utilities",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodeful/utils.git"
+  },
+  "author": "nodeful <romankisilo@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.12.10",
+    "axios": "^0.19.0",
+    "geoip-lite": "^1.2.1",
+    "moment": "^2.22.2",
+    "moment-range": "^4.0.1",
+    "nanoid": "^1.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/nodeful/utils/issues"
+  },
+  "homepage": "https://github.com/nodeful/utils#readme",
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "build": "tsc --project .",
+    "prepublishOnly": "npm run unlink && npm i && npm run build"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": true,
+    "declaration": true,
+    "allowJs": false,
+    "outDir": "dist",
+    "lib": [
+      "es7",
+      "es2017"
+    ],
+    "types": ["node"],
+    "downlevelIteration": true,
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./src/**/*.ts"
+  ]
+}
